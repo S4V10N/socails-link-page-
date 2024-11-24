@@ -101,6 +101,7 @@ footer div {
 @media(min-width: 1024px){
     main{
         width: 30%;
+        height: 100vh;
     }
     body{
         display: flex;
