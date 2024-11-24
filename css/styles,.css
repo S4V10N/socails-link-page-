@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+:root{
+    --GREEN: hsl(75, 94%, 57%);
+    --WHITE: hsl(0, 0%, 100%);
+
+    --LIGHTGREY: hsl(0, 0%, 20%);
+    --DARKGREY: hsl(0, 0%, 12%);
+    --GREY: hsl(0, 0%, 8%);
+
+    --LIGHTFONT: 400;
+    --BOLDFONT: 600;
+    --BOLDER-FONT: 700;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    padding: 2rem 1rem;
+    color: var(--WHITE);
+    background-color: var(--GREY);
+}
+.box{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DARKGREY);
+    border-radius: 2vh;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding: 0rem 2rem;
+}
+.box img{
+    height: 8rem;
+    border-radius: 50%;
+    margin: 0rem 0rem 1.2rem 0rem;
+    padding-top: 1.1rem;
+
+}
+h1{
+    font-weight: var(--BOLDER-FONT);
+    text-align: center;
+    margin: 0rem 0rem 0.6rem 0rem;
+}
+.box p{
+    font-size: 1rem;
+    font-weight: var(--BOLDFONT);
+    display: block;
+    text-align: center;
+    margin: 0.4rem 0rem 1.8rem 0rem;
+}
+.box p span{
+    color: var(--GREEN);
+    font-size: 1.2rem;
+}
+
+.button{
+    background-color: var(--LIGHTGREY);
+    height: 3rem;
+    width: 20rem;
+    margin: 0rem 0rem 1rem 0rem ;
+    display: grid;
+    place-content: center;
+    border-radius: 0.6rem;
+    font-weight: var(--BOLDER-FONT);
+    cursor: pointer;
+    transition: backgroung-color 0.3s ease;
+}
+
+footer div {
+    display: flex;
+    gap: 10px;
+    font-weight: var(--BOLDFONT);
+    color: var(--GREEN);
+}
+
+.button:active {
+    background-color: var(--GREEN);
+}
